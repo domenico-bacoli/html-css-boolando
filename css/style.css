@@ -13,6 +13,7 @@ body{
 nav{
     background-color: rgb(255, 105, 16);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
 }
 
 .container-centered{
@@ -73,3 +74,86 @@ nav .navbar-inner .right-link ul li{
 
 /* End Navbar */
 
+/* Start Main */
+
+main section .row{
+    display: flex;
+    gap: 16px;
+    padding-bottom: 40px;
+}
+
+main section .row .card{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+main section .row .card .card-image img{
+    width: 100%;
+}
+
+main section .row .card .card-caption .brand,
+main section .row .card .card-caption .discount-price,
+main section .row .card .card-caption .discount-price span{
+    font-size: 12px;
+    color: gray;
+}
+
+main section .row .card .card-caption .item-description{
+    font-size: 14px;
+}
+
+main section .row .card .card-caption .discount-price{
+    color: red;
+}
+
+main section .row .card .card-caption .discount-price span{
+    color: gray;
+    text-decoration: line-through;
+    padding-left: 8px;
+}
+
+/* Card position absolute element */
+
+main section .row .card .card-image{
+    position: relative;
+}
+
+main section .row .card .card-image .percentage-discount,
+main section .row .card .card-image .label{
+    position: absolute;
+    bottom: 40px;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    padding: 3px 8px;
+}
+
+main section .row .card .card-image .percentage-discount{ 
+    
+    left: 0;
+    background-color: red;   
+}
+
+main section .row .card .card-image .label{
+    left: 44px;
+    background-color: green;
+}
+
+main section .row .card .card-image .like{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: white;
+    padding: 8px 12px;
+}
+
+main section .row .card:nth-child(3) .card-image .label{
+    left: 0;
+}
+
+
+
+
+
+/* End Main */
