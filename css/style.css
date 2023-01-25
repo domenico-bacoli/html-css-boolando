@@ -41,6 +41,10 @@ nav .navbar-inner .left-link ul li{
     font-size: 13px;
 }
 
+nav .navbar-inner .left-link ul li:hover{
+    text-decoration: underline;
+}
+
 nav .navbar-inner .left-link ul li a,
 nav .navbar-inner .right-link ul li a{
     color: white;
@@ -99,6 +103,10 @@ main section .row .card .card-caption .discount-price span{
 main section .row .card .card-caption .item-description{
     font-size: 14px;
 }
+main section .row .card .card-caption .item-description a{
+    color: rgb(43, 43, 43);
+    text-decoration: none;
+}
 
 main section .row .card .card-caption .discount-price{
     color: red;
@@ -113,7 +121,6 @@ main section .row .card .card-caption .discount-price span{
 /* Start Card position absolute element */
 main section .row .card .card-image{
     position: relative;
-    cursor: pointer;
 }
 
 main section .row .card .card-image .percentage-discount,
@@ -127,7 +134,6 @@ main section .row .card .card-image .label{
 }
 
 main section .row .card .card-image .percentage-discount{ 
-    
     left: 0;
     background-color: red;   
 }
@@ -161,7 +167,62 @@ main section .row .card .card-image .image-change{
 main section .row .card .card-image:hover .image-change{
     display: inline-block;
 }
+
+.like:hover{
+    color: red;
+}
+
 /* End Image hover styling */
-
-
 /* End Main */
+
+/* Start Footer */
+
+footer{
+    background-color: rgb(25, 25, 25);
+}
+
+footer .footer-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+footer .footer-row .footer-left-link ul,
+footer .footer-row .footer-right-link ul{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;   
+}
+
+footer .footer-row .footer-left-link strong{
+    font-size: 12px;
+    color: white;    
+}
+
+footer .footer-row .footer-right-link strong{
+    color: white;
+    font-size: 10px;
+}
+
+footer .footer-row .footer-left-link li{
+    font-size: 10px;
+}
+
+footer .footer-row .footer-left-link li:hover{
+    text-decoration: underline;
+}
+
+footer .footer-row ul a{
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+footer .footer-row ul{
+    margin-top: 6px;
+}
+
+
+
+
