@@ -9,7 +9,6 @@ body{
 }
 
 /* Start Navbar */
-
 nav{
     background-color: rgb(255, 105, 16);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
@@ -71,11 +70,9 @@ nav .navbar-inner .right-link ul{
 nav .navbar-inner .right-link ul li{
     padding: 0 4px;
 }
-
 /* End Navbar */
 
 /* Start Main */
-
 main section .row{
     display: flex;
     gap: 16px;
@@ -113,10 +110,10 @@ main section .row .card .card-caption .discount-price span{
     padding-left: 8px;
 }
 
-/* Card position absolute element */
-
+/* Start Card position absolute element */
 main section .row .card .card-image{
     position: relative;
+    cursor: pointer;
 }
 
 main section .row .card .card-image .percentage-discount,
@@ -151,9 +148,20 @@ main section .row .card .card-image .like{
 main section .row .card:nth-child(3) .card-image .label{
     left: 0;
 }
+/* End Card position absolute element */
 
+/* Start Image hover styling */
+main section .row .card .card-image .image-change{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
-
+main section .row .card .card-image:hover .image-change{
+    display: inline-block;
+}
+/* End Image hover styling */
 
 
 /* End Main */
