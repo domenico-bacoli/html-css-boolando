@@ -12,7 +12,9 @@ body{
 nav{
     background-color: rgb(255, 105, 16);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .container-centered{
@@ -23,7 +25,7 @@ nav{
 nav .navbar-inner{
     display: flex;
     justify-content: space-between;
-    height: 60px;   
+    height: 60px;
 }
 
 nav .navbar-inner .left-link{
@@ -77,6 +79,10 @@ nav .navbar-inner .right-link ul li{
 /* End Navbar */
 
 /* Start Main */
+main{
+    padding-top: 100px;
+}
+
 main section .row{
     display: flex;
     gap: 16px;
@@ -126,7 +132,7 @@ main section .row .card .card-image{
 main section .row .card .card-image .percentage-discount,
 main section .row .card .card-image .label{
     position: absolute;
-    bottom: 40px;
+    bottom: 34px;
     font-size: 11px;
     font-weight: bold;
     color: white;
@@ -185,7 +191,7 @@ footer .footer-row{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 80px;
 }
 
 footer .footer-row .footer-left-link ul,
